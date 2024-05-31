@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Google Voice Call Automator",
+  "version": "1.0",
+  "description": "Automatically clicks the 'Call' button on the Google Voice web page",
+  "content_scripts": [
+    {
+      "matches": ["https://voice.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "windows"
+  ]
+}
