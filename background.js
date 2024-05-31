@@ -1,18 +1,11 @@
-let existingTabId = null;
-
-chrome.tabs.onCreated.addListener(function(tab) {
-  if (tab.url.startsWith("https://voice.google.com/")) {
-    if (existingTabId !== null) {
-      chrome.tabs.remove(existingTabId, function() {
-        console.log("Closed the old tab with URL starting with https://voice.google.com/");
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+  if (changeInfo.status === 'complete' && tab.url.startsWith("https://voice.google.com/")) {
+    chrome.tabs.query({ url: "https://voice.google.com/*" }, function(tabs) {
+      tabs.forEach(function(tab) {
+        if (tab.id!== tabId) {
+          chrome.tabs.remove(tab.id);
+        }
       });
-    }
-    existingTabId = tab.id;
-  }
-});
-
-chrome.tabs.onRemoved.addListener(function(tabId) {
-  if (tabId === existingTabId) {
-    existingTabId = null;
+    });
   }
 });
