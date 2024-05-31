@@ -1,11 +1,20 @@
-# Google_Extension_Voice_Auto_Tab_Close
-This Chrome extension automates the process of making calls through the Google Voice web interface. Its main functionality is to automatically click the "Call" button and populate the phone number input field when the call dialog appears on the Google Voice website.
+Here is a short and straightforward description of Google Voice extensions:
 
+Google Voice extensions allow you to set up a virtual phone system with multiple extensions mapped to individual team members' phone numbers. When a caller dials your main Google Voice number, they can select an extension from the auto-attendant menu to be routed directly to the corresponding team member's phone.
 
-The Google Voice Call Automator is a Chrome extension that streamlines the process of making calls through the Google Voice web application. When you navigate to the Google Voice website and the call dialog box appears, this extension automatically detects the dialog and performs the following actions:
-Clicks the "Call" button in the dialog box.
-Extracts the phone number displayed in the dialog title.
-Populates the phone number input field with the extracted number.
-This automation saves you from manually clicking the "Call" button and entering the phone number, making the call initiation process more efficient and convenient.
-The extension works by observing changes in the webpage's DOM and detecting when the call dialog box is added. It then interacts with the relevant HTML elements using JavaScript to trigger the desired actions.
-Please note that this extension relies on the specific HTML structure and CSS classes used by the Google Voice website, and any changes to the website's code may require updates to the extension for it to function correctly.
+The key points about Google Voice extensions are:
+
+- Create virtual extensions (e.g. press 1 for sales, 2 for support, etc.)
+- Map each extension to ring an individual team member's phone number
+- Caller can directly reach the desired person by selecting their extension
+- Provides a professional phone menu system for your business
+- Part of the paid Google Voice for Google Workspace plans, not the free consumer version
+
+So in essence, Google Voice extensions turn your single virtual Google Voice number into a multi-line phone system with customizable call routing and an auto-attendant menu, without needing physical phone lines for each employee. This gives businesses a professional virtual PBX-like experience.
+
+Citations:
+[1] https://support.google.com/a/answer/9204988?hl=en
+[2] https://support.ooma.com/home/google-voice-extensions/
+[3] https://www.reddit.com/r/Googlevoice/comments/rn64iq/can_i_assign_extensions_to_each_of_my_team_members/?rdt=44743
+[4] https://techguides.uindy.edu/m/78752/l/1661170-use-google-voice
+[5] https://justcall.io/blog/what-is-google-voice-business-and-how-does-it-work.html
