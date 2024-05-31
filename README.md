@@ -1,4 +1,3 @@
-Okay, got it. Let me provide a description for the actual use case of this Chrome extension:
 
 This Chrome extension automates the process of making calls through the Google Voice web interface. Its main functionality is to automatically click the "Call" button and populate the phone number input field when the call dialog appears on the Google Voice website.
 
